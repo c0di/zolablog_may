@@ -1,17 +1,50 @@
-# The URL the site will be built for
+# Base URL of the site, the only required config value
+base_url = "https://c0di.github.io/zolablog_may"
 
-base_url = "https://c0di.github.io/"
+# Used in RSS by default
+title = "My Zola Blog"
+description = "A blog powered by Zola and the Apollo theme"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+# The default language
+default_language = "en"
 
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+# Theme name to use
+theme = "apollo"
 
+# Generate RSS feed
+#generate_feed = true
+
+# When set to "true", the generated HTML files are minified
+minify_html = true
+
+# For overriding the default output directory `public`
+output_dir = "public"
+
+# Code highlighting
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
+highlight_theme = "dracula"
 
 [extra]
-# Put all your custom variables here
+# Put all your custom theme variables here
+apollo_menu = [
+    { name = "Blog", url = "$BASE_URL" },
+    { name = "Tags", url = "$BASE_URL/tags" },
+    { name = "Archive", url = "$BASE_URL/archive" },
+    { name = "About", url = "$BASE_URL/about" },
+]
+
+# Enable reading time display
+apollo_reading_time = true
+
+# Enable word count
+apollo_word_count = true
+
+# Date format used when listing posts (main page, tags, etc)
+apollo_date_format = "%e %B %Y"
+
+# Your social handles, displayed in footer
+apollo_social = [
+    { name = "github", url = "https://github.com/yourusername" },
+    { name = "twitter", url = "https://twitter.com/yourusername" },
+]
