@@ -2,7 +2,7 @@
 base_url = "https://c0di.github.io/"
 
 # Used in RSS by default
-title = "My Zola Blog"
+title = "My ZOLA Blog"
 description = "A blog powered by Zola and the Apollo theme"
 
 # The default language
