@@ -1,5 +1,5 @@
 name: Deploy Zola site to GitHub Pages
-
+https://c0di.github.io/zolablog_may/
 on:
   push:
     branches:
