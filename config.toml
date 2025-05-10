@@ -1,5 +1,5 @@
 # Base URL of the site, the only required config value
-base_url = "https://c0di.github.io/zolablog_may"
+base_url = "https://c0di.github.io/"
 
 # Used in RSS by default
 title = "My Zola Blog"
